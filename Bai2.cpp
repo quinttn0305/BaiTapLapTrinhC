@@ -9,7 +9,7 @@ int main(void)
 {
 	int n;
 	printf("Nhap so nguyen duong n: ");
-	scanf_s("%d", &n);
+	scanf("%d", &n);
 
 	int soCP = demSCP(n);
 	printf("\nSo luong so chinh phuong nho hon %d la: %d\n", n, soCP);
@@ -33,7 +33,7 @@ void soChinhPhuong(int n)
 
 int kiemTraSCP(int n)
 {
-	int cbh = sqrt(float(n));
+	int cbh = sqrt(n);
 	return cbh * cbh == n;
 }
 
